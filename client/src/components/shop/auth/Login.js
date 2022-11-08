@@ -50,7 +50,7 @@ const Login = (props) => {
       ) : (
         ""
       )}
-      <form className="space-y-4">
+      <form className="space-y-4 rounded-md">
         <div className="flex flex-col">
           <label htmlFor="name">
             Username or email address

@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import "./style.css";
+import Logo from "../public/logo/envoi.jpeg"
 
 import { logout } from "./Action";
 import { LayoutContext } from "../index";
@@ -73,15 +74,15 @@ const Navber = (props) => {
               style={{ letterSpacing: "0.10rem" }}
               className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
             >
-              ENVOI
+              <img src={Logo} alt="Logo" className="h-5 text-center" />
             </span>
           </div>
           <div
             onClick={(e) => history.push("/")}
             style={{ letterSpacing: "0.70rem" }}
-            className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
+            className="hidden lg:block col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer flex items-center"
           >
-            Envoi
+            <img src={Logo} alt="logo" className="h-10 text-center"  />
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}

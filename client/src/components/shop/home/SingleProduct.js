@@ -61,8 +61,8 @@ const SingleProduct = (props) => {
       {products && products.length > 0 ? (
         products.map((item, index) => {
           return (
-            <Fragment key={index}>
-              <div className="relative col-span-1 m-2">
+            <Fragment key={index} >
+              <div className="relative  col-span-1 m-2 cardProduct p-4">
                 <img
                   onClick={(e) => history.push(`/products/${item._id}`)}
                   className="w-full object-cover object-center cursor-pointer"

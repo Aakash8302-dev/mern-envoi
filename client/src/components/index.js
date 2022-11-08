@@ -12,6 +12,7 @@ import {
 } from "./shop";
 import { DashboardAdmin, Categories, Products, Orders } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
+import Blog from "./shop/Blog";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
