@@ -16,6 +16,8 @@ import Blog from "./shop/Blog";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import Contact from './shop/contact/Contact'
+
 /* Routing All page will be here */
 const Routes = (props) => {
   return (
@@ -25,7 +27,7 @@ const Routes = (props) => {
         <Route exact path="/" component={Home} />
         <Route exact path="/wish-list" component={WishList} />
         <Route exact path="/products/:id" component={ProductDetails} />
-        <Route
+        <Route 
           exact
           path="/products/category/:catId"
           component={ProductByCategory}

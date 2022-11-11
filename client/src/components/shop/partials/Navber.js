@@ -1,5 +1,5 @@
 import React, { Fragment, useContext } from "react";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory, useLocation, useNavigate } from "react-router-dom";
 import "./style.css";
 import Logo from "../public/logo/envoi.jpeg"
 
@@ -10,6 +10,7 @@ import { isAdmin } from "../auth/fetchApi";
 const Navber = (props) => {
   const history = useHistory();
   const location = useLocation();
+  const navigate = useLocation();
 
   const { data, dispatch } = useContext(LayoutContext);
 
@@ -42,16 +43,21 @@ const Navber = (props) => {
             </span>
             <span
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
-            <span
-              className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              onClick={(e) => history.push("/contact-us")}
-            >
-              Contact us
-            </span>
+              <span
+                className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+                onClick={(e) => window.location.replace("https://www.google.com")}
+              >
+                Contact us
+              </span>
+              <span
+                className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
+                onClick={(e) => window.location.replace("https://www.google.com")}
+              >
+                About us
+              </span>
           </div>
           <div className="col-span-2 lg:hidden flex justify-items-stretch	 items-center">
             <svg
